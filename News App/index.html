@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/harshit.png">
+    <title>Awesome-NewsApp</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="logo-img">
+                <img src="img/logo.jpg" alt="LOGO" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="E.G :- Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+
+
+    <template id="template-news-card"> 
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is The Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui eaque illo, sed non labore aliquam! Pariatur distinctio mollitia ullam.</p>
+            </div>
+        </div>
+    </template>
+
+<script src="scriptHarshit.js"></script>
+<!-- aip key :- from https://newsapi.org/  -->
+</body>
+</html>
